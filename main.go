@@ -94,7 +94,7 @@ func main() {
 	verboseFlag := flag.Bool("v", false, "Verbose")
 	cert := flag.String("cert", "", "SSL certificate file")
 	key := flag.String("key", "", "SSL key file")
-	webdir := flag.String("web", "", "SSL key file")
+	webdir := flag.String("web", "", "Serve files from DIR.")
 	runOnceFlag := flag.Bool("run-once", false, "handle a single WebSocket connection and exit")
 	flag.Parse()
 	if *helpFalg {
